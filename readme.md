@@ -1,1 +1,1 @@
-https://szkonieczny.github.io/goit-markup-hw-08/
+https://szkonieczny.github.io/zadanie_grupowe_projekt-4/

@@ -1,0 +1,64 @@
+// @use "./utils/variables" as *;
+@import "./utils/variables";
+@import "./utils/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primaryFontFamily;
+  background-color: $primaryBg;
+  color: $primaryFontColor;
+}
+
+.container {
+  max-width: 480px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  width: 100%;
+
+  @include tablet {
+    min-width: 768px;
+  }
+  @include desktop {
+    min-width: 1200px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: $primaryFontColor;
+    letter-spacing: 0.03em;
+    text-align: center;
+    @include desktop {
+      font-size: 36px;
+    }
+  }
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@import "./components/header";
+@import "./components/section";
+@import "./components/footer";
+@import "./components/modal";
